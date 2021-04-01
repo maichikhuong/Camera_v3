@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <org.opencv.android.JavaCameraView
+        android:layout_width="240dp"
+        android:layout_height="360dp"
+        android:id = "@+id/java_camera_view"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+    </org.opencv.android.JavaCameraView>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/textViewResult"
+        android:textSize="20dp"
+        android:layout_above="@+id/btnRestart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp" />
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/btnRestart"
+        android:text="Restart"
+        android:layout_below="@+id/texture"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewReadOutTime"
+        android:layout_below="@+id/java_camera_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp" />
+
+    <TextureView
+        android:id="@+id/texture"
+        android:layout_width="240dp"
+        android:layout_height="360dp"
+        android:layout_above="@+id/btnStart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="175dp" />
+
+</RelativeLayout>
